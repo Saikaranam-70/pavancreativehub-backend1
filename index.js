@@ -9,7 +9,7 @@ const resetPasswordRoutes = require('./routes/resetPasswordRoutes')
 
 
 const app = express();
-const PORT = 4500;
+const PORT = process.env.PORT||4500;
 dotEnv.config();
 app.use(cors());
 
@@ -26,6 +26,6 @@ app.listen(PORT , ()=>{
     console.log(`Server started and rnning at ${PORT}`)
 })
 
-app.use('/home', (req, res)=>{
+app.use('/', (req, res)=>{
     res.send("<h1>Hello sai </h1>")
 })
