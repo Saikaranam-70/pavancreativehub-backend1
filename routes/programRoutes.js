@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const { verifyToken } = require('../middlewares/VERIFYtOKEN.JS');
+const { verifyToken } = require('../middlewares/verifyToken');
 const { addProgram, getAllProjectsByAminId, deleteProject, getAllProjects } = require('../controllers/programController');
 
 const router = express.Router();
