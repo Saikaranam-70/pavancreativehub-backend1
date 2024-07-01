@@ -18,7 +18,7 @@ const sendEmail = async(req, res)=>{
     try {
         const mailOptions = {
             from: email,
-            to:'saimanikantakaranam682@gmail.com',
+            to:'pavankumarkanapakala121@gmail.com',
             subject:'PAVAN CREATIVE HUB',
             text:`I want to contact you for discuss about E-Digital Project. My Name is ${name} and phone ${phone} 
             ${message}`
