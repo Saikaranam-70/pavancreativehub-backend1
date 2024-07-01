@@ -37,5 +37,4 @@ const sendEmail = async(req, res)=>{
         return res.status(500).json({error: 'Failed to reset password'})
     }
 }
-
 module.exports ={sendEmail}
