@@ -6,6 +6,7 @@ const bodyparser = require('body-parser')
 const adminRotes = require('./routes/adminRoutes')
 const programRoutes = require('./routes/programRoutes')
 const resetPasswordRoutes = require('./routes/resetPasswordRoutes')
+const sendEmailRoutes = require('./routes/sendMailRoutes')
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.use(bodyparser.json());
 app.use('/admin', adminRotes);
 app.use('/program', programRoutes)
 app.use('/update', resetPasswordRoutes);
+app.use('/mail', sendEmailRoutes)
 
 app.listen(PORT , ()=>{
     console.log(`Server started and rnning at ${PORT}`)
